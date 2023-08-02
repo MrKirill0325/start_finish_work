@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="170.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.controller.ErrorMessageController">
+   <children>
+      <GridPane alignment="TOP_CENTER" layoutX="3.0" layoutY="3.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="164.0" prefWidth="225.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="91.20000610351562" minHeight="10.0" prefHeight="76.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="75.19998779296876" minHeight="3.2000061035156193" prefHeight="3.2000061035156193" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="86.60001220703126" minHeight="10.0" prefHeight="85.59999389648439" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="labelMessage" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="226.0" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeFrame" text="Закрыть" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

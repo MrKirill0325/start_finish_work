@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="621.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.controller.StartWorkController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="371.2" prefWidth="600.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label text="Начало смены" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <Label text="Выбор сотрудника">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="30.0" />
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="176.00001220703126" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="30.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="addEmployeeOnScreenButton" accessibleHelp="Press Button" accessibleText="Press Button2" mnemonicParsing="false" onAction="#employeeClickUp" text="Добавить" GridPane.rowIndex="1" />
+                  <Button fx:id="deleteEmployeeOnScreenButton" mnemonicParsing="false" onAction="#employeeClickDown" text="Удалить" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="firstEmployeeBox" prefWidth="170.0" visibleRowCount="3" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="secondEmployeeBox" prefWidth="170.0" visibleRowCount="3" GridPane.columnIndex="2" />
+                  <ComboBox fx:id="thirdEmployeeBox" prefWidth="170.0" visibleRowCount="3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="fourthEmployeeBox" prefWidth="170.0" visibleRowCount="3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="fifthEmployeeBox" prefWidth="170.0" visibleRowCount="3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="sixthEmployeeBox" prefWidth="170.0" visibleRowCount="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.199951171875" minWidth="10.0" prefWidth="110.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="397.00001525878906" minWidth="10.0" prefWidth="270.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="397.00001525878906" minWidth="10.0" prefWidth="170.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                  <Separator prefWidth="200.0" GridPane.rowIndex="4" />
+                  <Separator prefWidth="200.0" GridPane.rowIndex="6" />
+                  <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <GridPane GridPane.rowIndex="3">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="125.20001220703125" minWidth="10.0" prefWidth="124.4000244140625" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="6 линия">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="sixLineEmptyProduct" mnemonicParsing="false" onAction="#lineSixNotWorking" text="Нет розлива" GridPane.rowIndex="2" />
+                        <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="5">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="125.20001220703125" minWidth="10.0" prefWidth="124.4000244140625" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="12 линия">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="twelveLineEmptyProduct" mnemonicParsing="false" onAction="#lineTwelveNotWorking" text="Нет розлива" GridPane.rowIndex="2" />
+                        <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="7">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="125.20001220703125" minWidth="10.0" prefWidth="124.4000244140625" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="18 линия">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="eighteenLineEmptyProduct" mnemonicParsing="false" onAction="#lineEighteenNotWorking" text="Нет розлива" GridPane.rowIndex="2" />
+                        <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Separator prefWidth="200.0" GridPane.rowIndex="8" />
+                  <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <GridPane maxWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ComboBox fx:id="sixLineProductBoxOne" prefWidth="126.0" />
+                        <ComboBox fx:id="sixLineProductBoxTwo" prefWidth="126.0" GridPane.columnIndex="1" />
+                        <ComboBox fx:id="sixLineProductBoxThree" prefWidth="126.0" GridPane.rowIndex="1" />
+                        <ComboBox fx:id="sixLineProductBoxFive" prefWidth="126.0" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="sixLineProductBoxSix" prefWidth="126.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="sixLineProductBoxFor" prefWidth="126.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="addProductChangeSixLine" mnemonicParsing="false" onAction="#changeProductLineSixClickUp" text="Доб. перестройку" />
+                        <Button fx:id="deleteProductChangeSixLine" maxWidth="114.0" mnemonicParsing="false" onAction="#changeProductLineSixClickDown" text="Уд. перестройку" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <GridPane maxWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ComboBox fx:id="twelveLineProductBoxOne" prefWidth="126.0" />
+                        <ComboBox fx:id="twelveLineProductBoxTwo" prefWidth="126.0" GridPane.columnIndex="1" />
+                        <ComboBox fx:id="twelveLineProductBoxThree" prefWidth="126.0" GridPane.rowIndex="1" />
+                        <ComboBox fx:id="twelveLineProductBoxFive" prefWidth="126.0" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="twelveLineProductBoxSix" prefWidth="126.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="twelveLineProductBoxFor" prefWidth="126.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane maxWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ComboBox fx:id="eighteenLineProductBoxOne" prefWidth="126.0" />
+                        <ComboBox fx:id="eighteenLineProductBoxTwo" prefWidth="126.0" GridPane.columnIndex="1" />
+                        <ComboBox fx:id="eighteenLineProductBoxThree" prefWidth="126.0" GridPane.rowIndex="1" />
+                        <ComboBox fx:id="eighteenLineProductBoxFive" prefWidth="126.0" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="eighteenLineProductBoxSix" prefWidth="126.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="eighteenLineProductBoxFor" prefWidth="126.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="addProductChangeTwelveLine" mnemonicParsing="false" onAction="#changeProductLineTwelveClickUp" text="Доб. перестройку" />
+                        <Button fx:id="deleteProductChangeTwelveLine" maxWidth="114.0" mnemonicParsing="false" onAction="#changeProductLineTwelveClickDown" text="Уд. перестройку" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="addProductChangeEighteenLine" mnemonicParsing="false" onAction="#changeProductLineEighteenClickUp" text="Доб. перестройку" />
+                        <Button fx:id="deleteProductChangeEighteenLine" maxWidth="114.0" mnemonicParsing="false" onAction="#changeProductLineEighteenClickDown" text="Уд. перестройку" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Label text="Выбор продукта" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Button fx:id="startWorkSendButton" mnemonicParsing="false" onAction="#sendMessage" prefHeight="30.0" prefWidth="99.0" text="Сформировать" />
+            <Label fx:id="message" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="75.0" prefWidth="530.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
